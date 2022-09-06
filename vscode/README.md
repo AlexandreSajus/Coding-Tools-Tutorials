@@ -64,10 +64,74 @@ This section will cover the basic installation of VSCode in [*Windows*](#windows
 Installing extensions is done through the sidebar, click on the "Extensions" icon and search for the extension you want to install.
 
 <p align="center">
-  <img src="media/extensions.png" alt="Extensions Menu" width="40%"/>
+  <img src="media/extensions.png" alt="Extensions Menu" width="30%"/>
 </p>
 
 Here is a list of useful extensions
 
-... to be continued (LINK THE RELEVANT WIKI PAGES)
++ **Python**
+  + This extension adds support for Python to VSCode, it allows you to run, lint and debug Python code. It also adds interface elements to manage Python environments.
+  + The extension comes prepackaged with the Pylance and Jupyter extensions which are described below.
+  + To use this extension, just create a python file and edit it in VSCode.
+  + To choose the Python interpreter, open the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and select ```Python: Select Interpreter```.	
+
+<p align="center">
+  <img src="media/debugger.png" alt="Debugger" width="70%"/>
+</p>
+
+<p align="center">
+  <img src="media/interpreter.png" alt="Interpreters" width="70%"/>
+</p>
+
++ **Jupyter**
+  + Adds support for Jupyter notebooks to VSCode, it allows the edit and run Jupyter notebooks.
+  + To use this extension, just create a Jupyter notebook (.ipynb) and edit it in VSCode.
+
+<p align="center">
+  <img src="media/jupyter_simple.png" alt="Simple Notebook" width="50%"/>
+</p>
+
++ **Pylance**
+  + This extension adds support for type checking and auto-completion to VSCode, it is a replacement for the Python extension's IntelliSense engine.
+  + Pylance understands what type a variable has and uses this information to do completion, check for errors and provide documentation
+  + Pylance is enabled automatically when you edit Python:
+    + It will color code text according to type
+    + Hover over a variable/function to see its type and documentation
+    + ```Ctrl+Click``` or ```Cmd+Click``` on a variable/function to see its source code
+
+<p align="center">
+  <img src="media/pylance.png" alt="Pylance" width="80%"/>
+</p>
+
++ **Pylint**
+  + This extension installs pylint in VSCode if it is not in your environment, it checks for errors and bad practices in your code.
+  + To use this extension, just create a python file and edit it in VSCode, pylint will underline malpractices.
+  + For more information (pylint configuration, linting on save): go to this wiki page (ADD LINK)
+
+<p align="center">
+  <img src="media/linter.png" alt="Linter Example" width="80%"/>
+</p>
+
++ **Black Formatter**
+  + This extension installs Black in VSCode if it is not in your environment, it automatically formats your code to follow a certain standard.
+  + To use this extension, open the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and select ```Format Document```.
+  + For more information (black configuration, formatting on save): go to this wiki page (ADD LINK)
+  + Before/After example:
+
+<p align="center">
+  <img src="media/formatting_example.png" alt="Before/After Formatting" width="80%"/>
+</p>
+
++ **Github Copilot** (paid and optional)
+  + This extension is a paid subscription based service but its capabilities are well worth the price.
+  + Copilot is a code completion tool based on OpenAI Codex and it is extremely powerful.
+  + It reads and understands your codebase and often successfully writes docstrings, simple functions and classes.
+  + For more information, visit this [*link*](https://github.com/features/copilot).
+  + Here is an example output, I only typed the function name and variables, copilot's suggestion is written in grey:
+
+<p align="center">
+  <img src="media/copilot.png" alt="Before/After Formatting" width="80%"/>
+</p>
+
+... to be continued (LINK THE RELEVANT WIKI PAGES, ADD EXTENSIONS)
 
