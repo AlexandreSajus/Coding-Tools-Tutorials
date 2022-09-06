@@ -10,6 +10,11 @@ VSCode is a code editor available for Windows, Mac, and Linux. It comes with a r
 - [**VSCode**](#vscode)
   - [**Table of contents**](#table-of-contents)
   - [**Why use VSCode?**](#why-use-vscode)
+  - [**Installation**](#installation)
+    - [**Windows**](#windows)
+    - [**Linux**](#linux)
+    - [**Mac**](#mac)
+  - [**Useful extensions**](#useful-extensions)
 
 ## **Why use VSCode?**
 
@@ -35,3 +40,34 @@ Here are some example usecases of VSCode:
 <p align="center">
   <img src="media/liveshare.jpg" alt="LiveShare" width="80%"/>
 </p>
+
+## **Installation**
+
+This section will cover the basic installation of VSCode in [*Windows*](#windows), [*Linux*](#linux) and [*Mac*](#mac).
+
+### **Windows**
+
+1. Download the installer from the [VSCode website](https://code.visualstudio.com/download).
+2. Launch the installer and follow the instructions.
+3. Launch VSCode and follow the customization steps.
+
+### **Linux**
+
+... to be continued
+
+### **Mac**
+
+... to be continued
+
+## **Useful extensions**
+
+Installing extensions is done through the sidebar, click on the "Extensions" icon and search for the extension you want to install.
+
+<p align="center">
+  <img src="media/extensions.png" alt="Extensions Menu" width="40%"/>
+</p>
+
+Here is a list of useful extensions
+
+... to be continued (LINK THE RELEVANT WIKI PAGES)
+
