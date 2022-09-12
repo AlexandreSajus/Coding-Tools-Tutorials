@@ -15,6 +15,10 @@ VSCode is a code editor available for Windows, Mac, and Linux. It comes with a r
     - [**Linux**](#linux)
     - [**Mac**](#mac)
   - [**Useful extensions**](#useful-extensions)
+  - [**Managing a repo from VSCode**](#managing-a-repo-from-vscode)
+    - [**Importing your repo to VSCode:**](#importing-your-repo-to-vscode)
+    - [**Pushing your changes***](#pushing-your-changes)
+  - [**Using the debugger**](#using-the-debugger)
 
 ## **Why use VSCode?**
 
@@ -135,3 +139,84 @@ Here is a list of useful extensions
 
 ... to be continued (LINK THE RELEVANT WIKI PAGES, ADD EXTENSIONS)
 
+## **Managing a repo from VSCode**
+
+In this section we will cover how to manage a git repo from VSCode
+
+### **Importing your repo to VSCode:**
+
+1. Have a Git repository beforehand and [*Git*](https://git-scm.com/downloads) installed on your computer
+<p align="center">
+  <img src="media/repo.png" alt="Example Repo" width="70%"/>
+</p>
+
+2. To edit it in VSCode, you are going to have to clone it on your machine. To do so, open a folder where you want to clone your project into using the top-bar: ```File``` -> ```Open Folder...```
+<p align="center">
+  <img src="media/open_folder.png" alt="Open Folder" width="40%"/>
+</p>
+
+3. Also open a terminal from the top-bar: ```Terminal``` -> ```New Terminal```
+<p align="center">
+  <img src="media/open_terminal.png" alt="Open Terminal" width="40%"/>
+</p>
+
+4. Find the link to your github repo, it should be on your github repo's webpage under Code -> Clone and should be an https link (for me its: https://github.com/AlexandreSajus/Coding-Tools-Tutorials.git)
+<p align="center">
+  <img src="media/repo_link.png" alt="Repo Link" width="60%"/>
+</p>
+
+5. In your terminal, type: ```git clone [link to your repo]```
+<p align="center">
+  <img src="media/terminal.png" alt="Terminal" width="80%"/>
+</p>
+
+6. This should have downloaded the files of your repo in a folder that you can see in the filetree
+<p align="center">
+  <img src="media/downloaded.png" alt="Downloaded Repo" width="30%"/>
+</p>
+
+7. Open that folder in VSCode (top-bar: ```File``` -> ```Open Folder...```) and you are ready to edit your repo
+<p align="center">
+  <img src="media/open_repo.png" alt="Opened Repo" width="30%"/>
+</p>
+
+### **Pushing your changes***
+
+1. You can now edit files like I have done when writing this tutorial, the file tree and the side of the editor will be color coded to explain if the changes are adds, edits or removals: here README.md is yellow because I edited it, media is green because I added images into it, the editor sidebar is green because I added text
+<p align="center">
+  <img src="media/changes.png" alt="Colored Changes" width="40%"/>
+</p>
+
+2. Before pushing your changes, I suggest changing branch. In general you should have a clean, functional master branch and you should always push edits to separate branches so that you can check them before merging them with master. You can create a branch with the terminal with ```git branch [branch name]```
+
+3. You now need to tell git that you want to work on this new branch by typing in the terminal ```git checkout dev```
+<p align="center">
+  <img src="media/checkout.png" alt="Checkout" width="80%"/>
+</p>
+
+4. You can now commit your code using VSCode's git integration located on the sidebar called ```Source Control```:
+<p align="center">
+  <img src="media/git_button.png" alt="Source Control" width="40%"/>
+</p>
+
+5. Stage the changes you want to commit using the ```+``` button next to the file
+<p align="center">
+  <img src="media/stage_change.png" alt="Stage Change" width="40%"/>
+</p>
+
+6. Type a commit message in the text box: the message should be concise and explain what the commit does, you can also use emojis to add color (ex: ```:tada: Adds section on repo management```)
+<p align="center">
+  <img src="media/commit_comment.png" alt="Stage Change" width="40%"/>
+</p>
+
+7. When you are ready to upload your changes, press the ```Commit & Push``` button
+<p align="center">
+  <img src="media/push.png" alt="Push" width="60%"/>
+</p>
+
+8. Your changes are now uploaded in your branch and you can call for a pull request if you want these changes to be added to master. Before accepting a pull request, make sure your code is functional and up-to-standard using code reviews, testing...
+
+
+## **Using the debugger**
+
+to be continued
