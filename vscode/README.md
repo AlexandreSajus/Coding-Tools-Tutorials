@@ -17,7 +17,7 @@ VSCode is a code editor available for Windows, Mac, and Linux. It comes with a r
   - [**Useful extensions**](#useful-extensions)
   - [**Managing a repo from VSCode**](#managing-a-repo-from-vscode)
     - [**Importing your repo to VSCode:**](#importing-your-repo-to-vscode)
-    - [**Pushing your changes***](#pushing-your-changes)
+    - [**Pushing your changes**](#pushing-your-changes)
   - [**Using the debugger**](#using-the-debugger)
 
 ## **Why use VSCode?**
@@ -180,7 +180,7 @@ In this section we will cover how to manage a git repo from VSCode
   <img src="media/open_repo.png" alt="Opened Repo" width="30%"/>
 </p>
 
-### **Pushing your changes***
+### **Pushing your changes**
 
 1. You can now edit files like I have done when writing this tutorial, the file tree and the side of the editor will be color coded to explain if the changes are adds, edits or removals: here README.md is yellow because I edited it, media is green because I added images into it, the editor sidebar is green because I added text
 <p align="center">
@@ -188,33 +188,43 @@ In this section we will cover how to manage a git repo from VSCode
 </p>
 
 2. Before pushing your changes, I suggest changing branch. In general you should have a clean, functional master branch and you should always push edits to separate branches so that you can check them before merging them with master. You can create a branch with the terminal with ```git branch [branch name]```
+<p align="center">
+  <img src="media/branches.png" alt="Branches" width="30%"/>
+</p>
+
 
 3. You now need to tell git that you want to work on this new branch by typing in the terminal ```git checkout dev```
 <p align="center">
-  <img src="media/checkout.png" alt="Checkout" width="80%"/>
+  <img src="media/checkout.png" alt="Checkout" width="60%"/>
 </p>
 
 4. You can now commit your code using VSCode's git integration located on the sidebar called ```Source Control```:
 <p align="center">
-  <img src="media/git_button.png" alt="Source Control" width="40%"/>
+  <img src="media/git_button.png" alt="Source Control" width="30%"/>
 </p>
 
-5. Stage the changes you want to commit using the ```+``` button next to the file
+5. Stage the changes you want to commit using the ```+``` button next to the file, don't forget to save files you edited if you want to stage the newest changes with ```Ctrl + S``` or ```Cmd + S```
 <p align="center">
   <img src="media/stage_change.png" alt="Stage Change" width="40%"/>
 </p>
 
 6. Type a commit message in the text box: the message should be concise and explain what the commit does, you can also use emojis to add color (ex: ```:tada: Adds section on repo management```)
 <p align="center">
-  <img src="media/commit_comment.png" alt="Stage Change" width="40%"/>
+  <img src="media/commit_comment.png" alt="Stage Change" width="30%"/>
 </p>
 
 7. When you are ready to upload your changes, press the ```Commit & Push``` button
 <p align="center">
-  <img src="media/push.png" alt="Push" width="60%"/>
+  <img src="media/push.png" alt="Push" width="45%"/>
 </p>
 
 8. Your changes are now uploaded in your branch and you can call for a pull request if you want these changes to be added to master. Before accepting a pull request, make sure your code is functional and up-to-standard using code reviews, testing...
+<p align="center">
+  <img src="media/commit_success.png" alt="Commit Report" width="40%"/>
+</p>
+<p align="center">
+  <img src="media/compare.png" alt="Compare & PR" width="80%"/>
+</p>
 
 
 ## **Using the debugger**
