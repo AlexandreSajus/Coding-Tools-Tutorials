@@ -226,6 +226,7 @@ In this section we will cover how to manage a git repo from VSCode
   <img src="media/compare.png" alt="Compare & PR" width="80%"/>
 </p>
 
+To know more about merging and pull requests, please visit this <a href="placeholder.com" target="_blank">wiki page PLACEHOLDER</a>
 
 ## **Using the debugger**
 
