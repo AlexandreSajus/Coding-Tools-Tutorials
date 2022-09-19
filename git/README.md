@@ -61,13 +61,13 @@ To create a repository:
   - Public: people will be able to see your repo but won't be able to make changes unless you allow them to
   - Private: people won't be able to see or edit your repo unless you authorize them to
 - Choose if you want a:
-  - README file: a markdown file that you can edit to precisely describe your project with text, badges, images, gifs... It should cover introduction, usage, how to contribute...
+  - <a href="...">`README.md`, a markdown file</a> that you can edit to precisely describe your project with text, badges, images, gifs... It should cover introduction, usage, how to contribute...
 <p align="center">
   <img src="media/readme.png" alt="README" width="50%"/>
 </p>
 
-  - .gitignore: a text file that will contain the names of what you want your version control to ignore: temp files, environments...
-  - license: the license decides what other people can legally do with what you write, for more information go to this <a href="placeholder.com" target="_blank">wiki page PLACEHOLDER</a>
+  - <a href="...">`.gitignore`</a>, a text file that will contain the names of what you want your version control to ignore: temp files, environments...
+  - `LICENSE`, <a href="...">the license</a> decides what other people can legally do with what you write
 - Once you're done, press ```Create Repository``` and you are done:
 <p align="center">
   <img src="media/created_repo.png" alt="Created Repo" width="50%"/>
@@ -77,8 +77,8 @@ To create a repository:
 Cloning a repo means copying its files locally so you can edit them on your machine.
 
 This process is described in the following wiki pages under Managing a repo / Importing your repo:
-<a href="placeholder.com" target="_blank">in VSCode PLACEHOLDER</a> or
-<a href="placeholder.com" target="_blank">in Pycharm PLACEHOLDER</a>
+<a href="...">in VSCode</a> or
+<a href="...">in Pycharm</a>
 
 Once done, your editor should show your repo in the file tree ready to be edited
 <p align="center">
@@ -109,16 +109,15 @@ You can now edit your files locally from your editor. In VSCode, edits will be c
 
 ## Stage, Commit and Push
 When you are ready to upload the code to the repo's branch, you will need to stage, commit and push your changes:
-- Staging is the process of choosing which changes you want to add to your commit
-- Committing is grouping these changes into a single named entity
-- Pushing is uploading the commit
+- **Staging** is the process of choosing which changes you want to add to your commit
+- **Committing** is grouping these changes into a single named entity
+- **Pushing** is uploading the commit
 <p align="center">
   <img src="media/source_control.png" alt="Source Control" width="60%"/>
 </p>
-
-This process is described in the following wiki pages under Managing a repo / Pushing your changes:
-<a href="placeholder.com" target="_blank">in VSCode PLACEHOLDER</a> or
-<a href="placeholder.com" target="_blank">in Pycharm PLACEHOLDER</a>
+This process is described in the following wiki pages under Managing a repo / Pushing your changes,
+<a href="..." target="_blank">in VSCode</a> or
+<a href="..." target="_blank">in Pycharm</a>
 
 ## Create and merge a pull request
 Your changes have now been uploaded to your branch, you can keep editing and pushing code to this branch.
@@ -146,18 +145,19 @@ Once the pull request is created, I can then merge it on the pull request's page
 <p align="center">
   <img src="media/merge.png" alt="Merge" width="60%"/>
 </p>
+**BEFORE MERGING,** Make sure that your code is functional, up-to-standards and that it does not break other parts of the project. To ensure this,
 
-**BEFORE MERGING:**
-- Make sure that your code is functional, up-to-standards and that it does not break other parts of the project
-- To ensure this, make collaborators review your code
-- Have proper testing for your code (see this <a href="placeholder.com" target="_blank">wiki page PLACEHOLDER</a>)
-- Ideally you should have continuous integration which will automatically test your code's function and standards on multiple OS' and versions of Python at each commit (see this <a href="placeholder.com" target="_blank">wiki page PLACEHOLDER</a>)
+- Make collaborators review your code
+- Have proper <a href="...">testing for your code</a>
+- Ideally you should have <a href="...">continuous integration</a> which will automatically test your code's function and standards on multiple OS' and versions of Python at each commit.
 - You can also configure your repo so that merging is blocked unless it is approved by collaborators and tested
 
 ## Other considerations
 
 ### Merge conflicts
-Git will try to do merges automatically, but sometimes it does not work. For example, when the source branch and the target branch both modify the same line. In this case, Git will warn you that a "*Conflict*" occured and you will have to manually edit the corresponding files to chose the correct modification.
+Git will try to do merges automatically, but sometimes it does not work. For example, when the source branch and the target branch both modify the same line.
+
+In this case, Git will warn you that a "*Conflict*" occured and you will have to manually edit the corresponding files to chose the correct modification.
 Afterwards, you can tell git that you resolved the conflict and Git will proceed by generating the Merge commit.
 
 When you are resolving a conflict, you cannot do anything else like adding new commits, so be careful before merging that you are ready for the merge. If you were not ready, you can always cancel the merge.
