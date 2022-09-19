@@ -50,8 +50,9 @@ To create a repository:
   <img src="media/profile.png" alt="Github Profile" width="80%"/>
 </p>
 <p align="center">
-  <img src="media/repo.png" alt="Repository Button" width="80%"/>
+  <img src="media/new_repo.png" alt="Repository Button" width="80%"/>
 </p>
+
 
 2. Configure your new repo
 
