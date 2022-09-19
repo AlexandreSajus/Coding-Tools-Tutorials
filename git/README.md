@@ -41,7 +41,7 @@ Branches are movable pointers that point to a specific commit. Because commits h
 </p>
 
 
-## Creating a Repository
+## Create a repository
 A repository stores your files and keeps track of the changes you make to it. You can create a repo from the UI of whichever version control tool you are using. Here we'll use github:
 
 To create a repository:
@@ -73,7 +73,7 @@ To create a repository:
   <img src="media/created_repo.png" alt="Created Repo" width="50%"/>
 </p>
 
-## Cloning the repository
+## Clone the repository
 Cloning a repo means copying its files locally so you can edit them on your machine.
 
 This process is described in the following wiki pages under Managing a repo / Importing your repo:
@@ -100,7 +100,7 @@ You now need to tell git that you want to work on this new branch by typing in t
   <img src="media/checkout.png" alt="Checkout" width="60%"/>
 </p>
 
-## Editing your files locally
+## Edit your files locally
 
 You can now edit your files locally from your editor. In VSCode, edits will be color-coded according to their state (modified, added, deleted...)
 <p align="center">
