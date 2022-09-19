@@ -160,7 +160,7 @@ Git will try to do merges automatically, but sometimes it does not work. For exa
 In this case, Git will warn you that a "*Conflict*" occured and you will have to manually edit the corresponding files to chose the correct modification.
 Afterwards, you can tell git that you resolved the conflict and Git will proceed by generating the Merge commit.
 
-When you are resolving a conflict, you cannot do anything else like adding new commits, so be careful before merging that you are ready for the merge. If you were not ready, you can always cancel the merge.
+When you are resolving a conflict, you cannot do anything else like adding new commits, so make sure you are ready before merging. If you were not ready, you can always cancel the merge.
 
 ### Remotes
 Remotes are URLs that allow you to share your project with other people. While anybody can create and host a remote, most commonly, you will use [GitHub](https://github.com) (or [Gitlab](https://gitlab.com/explore)) to host and share your projects. 
