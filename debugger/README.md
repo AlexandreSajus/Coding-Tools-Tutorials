@@ -1,12 +1,22 @@
-# Debugger
+# **Debugger**
 
 A debugger is a program that describes the state of your variables at chosen execution steps of your code. This helps better understand what your code is doing and makes debugging easier.
 
-## **Using the debugger**
+<p align="center">
+  <img src="media/debug2.png" alt="Debug 2" width="80%"/>
+</p>
+
+# **Why use a debugger?**
 
 A debugger explicitely describes the state of your variables at chosen execution steps of your code. This allows you to better understand what your code is doing and helps you find the exact origin of bugs. In general, using a debugger is more efficient and fast than using prints.
 
-In this section we will use a simple example to show how to use the debugger and why it is useful.
+<p align="center">
+  <img src="media/variables.png" alt="Variables" width="35%"/>
+</p>
+
+# **Usage**
+
+In this section we will use a simple example to show how to use the debugger both in [**VSCode**](#in-vscode) and [**Pycharm**](#in-pycharm) and show why it is useful.
 
 I have written a short script that creates an agent class with a team attribute that can be ```1``` or ```2``` and I have created four agents with different teams.
   
@@ -38,6 +48,8 @@ In this example the mistake is obvious: we are deleting items from the list we a
 
 But let's imagine that the code is part of a way more complex project. This error prompt does not tell us exactly where the error is and we are going to use the debugger to find it.
 
+## **In VSCode**
+
 1. Add breakpoints: breakpoints are the parts of the code where you want the debugger to stop the execution and tell you the state of the variables at that moment. You can add a breakpoint by clicking on the red circle next to the line you want to break on.
 <p align="center">
   <img src="media/breakpoint.png" alt="Breakpoint" width="40%"/>
@@ -45,7 +57,7 @@ But let's imagine that the code is part of a way more complex project. This erro
 
 2. Start the debugger: in the topbar, select: ```Run``` -> ```Start Debugging```
 <p align="center">
-  <img src="media/start_debug.png" alt="Breakpoint" width="50%"/>
+  <img src="media/start_debug.png" alt="Start Debug" width="50%"/>
 </p>
 
 3. In debugging mode, a top bar will appear allowing you to advance to the next breakpoint by pressing on this button ```Continue (F5)```
@@ -67,3 +79,7 @@ But let's imagine that the code is part of a way more complex project. This erro
 <p align="center">
   <img src="media/debug2.png" alt="Debug 2" width="80%"/>
 </p>
+
+## **In Pycharm**
+
+to be continued...
