@@ -1,11 +1,9 @@
-IMAGES AND VSCODE TUTORIAL
-
 # **Formatter**
 
 A Formatter formats your code to respect a specific standard. This makes your code more readable and easier to maintain.
 
 <p align="center">
-  <img src="media/linter_example.png" alt="Linter Example" width="50%"/>
+  <img src="media/formatting_example.png" alt="Formatting" width="80%"/>
 </p>
 
 ## **Why use a formatter?**
@@ -20,44 +18,46 @@ In this section I'll cover how to install a formatter in both [*VSCode*](#vscode
 
 This tutorial will cover the installation and usage of Black in VSCode.
 
-*Many formatters are available for VSCode, we tested some of them and found that Black felt better. It really made formatting something we never had to worry about when peer-reviewing.*
+*Many formatters are available for VSCode, we tested some of them and found that Black felt better. It really made formatting something we never had to worry about when doing code reviews.*
 
 Make sure you have VSCode and Python installed on your machine.
 
-1. In VSCode, open the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and type ```Python: Select Linter``` and click on it
+1. In VSCode, open the Extensions menu on the left sidebar
 <p align="center">
-  <img src="media/command_palette.png" alt="Command Palette" width="50%"/>
+  <img src="media/extensions.png" alt="Extensions Menu" width="30%"/>
 </p>
 
-2. In the dropdown menu, select ```pylint```
+2. In the search bar, type ```Black Formatter``` and install the extension
 <p align="center">
-  <img src="media/dropdown.png" alt="Dropdown" width="50%"/>
+  <img src="media/black.png" alt="Extension" width="30%"/>
 </p>
 
-3. VSCode will prompt you to install pylint to your Python environment. Click ```Install``` and wait for pylint to be installed
+3. Once installed, you now need to set Black as your default formatter. To do so, open the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and select ```Preferences: Open Settings (UI)```
 <p align="center">
-  <img src="media/prompt.png" alt="Prompt" width="50%"/>
+  <img src="media/settings.png" alt="Settings" width="60%"/>
 </p>
 
-4. Once installed, you can run the linter on your file by opening the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and selecting ```Python: Run Linting```
+4. In the search bar, type ```python formatting provider``` and select ```black``` as your provider
 <p align="center">
-  <img src="media/run_linting.png" alt="Run Linting" width="50%"/>
+  <img src="media/default.png" alt="Default Provider" width="60%"/>
 </p>
 
-5. To make linting easier, you can configure VSCode to run the linter automatically when you save your file. To do so, open the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and select ```Preferences: Open Settings (UI)```
+5. While we are here: to make formatting easier, you can configure VSCode to run black automatically when you save your file. Search for ```format on save``` and check the box
 <p align="center">
-  <img src="media/settings.png" alt="Settings" width="50%"/>
+  <img src="media/format_save.png" alt="Format Save" width="60%"/>
 </p>
 
-6. A settings window opens, in the search bar type ```Lint On Save``` and check the box associated to ```Whether to lint Python files when saved```
+6. Congratulations, you have successfully installed black in VSCode! Everytime you save a Python file, black will format it automatically.
 <p align="center">
-  <img src="media/lint_on_save.png" alt="Lint On Save" width="50%"/>
+  <img src="media/formatting_example.png" alt="Formatting" width="80%"/>
 </p>
 
-7. Congratulations, you have successfully installed pylint in VSCode! Everytime you save a Python file, pylint will highlight the code malpractices it found.
+You can also run black manually by opening the command palette (```Ctrl+Shift+P``` on Windows/Linux, ```Cmd+Shift+P``` on Mac) and selecting ```Format Document```
 <p align="center">
-  <img src="media/missing_docstring.png" alt="Missing Docstring" width="50%"/>
+  <img src="media/format.png" alt="Format" width="60%"/>
 </p>
+
+You can also install black in your python environment by typing in a terminal: ```pip install black```
 
 ### **Pycharm**
 
